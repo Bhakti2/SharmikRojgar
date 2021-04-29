@@ -6,6 +6,10 @@
     color: black;
 }
 
+.navbar-custom{
+    margin-left: 67%;
+}
+
 /* navbar end */
 
 /* feed ssection start */
@@ -60,8 +64,9 @@
 .extra{
     margin-left: 2%;
 }
-/* .feed-para{
-    overflow: hidden;
-  max-width: 75ch;
-} */
+.icon-custom{
+
+    margin-left: 10%;
+    font-size: 30px;
+}
 /* feed ssection end */

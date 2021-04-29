@@ -26,6 +26,10 @@
     
 }
 
+.feed-para{
+    margin-top: 12px;
+}
+
 .uppr{
     margin: 4%;
 }
@@ -45,6 +49,11 @@
 .lower{
     /* display: flex; */
     margin: 4% 0% 0% 1%;
+}
+
+.para{
+    margin-top: -10px;
+    font-size: 12px;
 }
 
 .extra{

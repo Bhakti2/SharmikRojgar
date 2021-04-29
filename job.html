@@ -54,12 +54,12 @@
   </nav>
 
 <!-- navbar end -->
-
+<input type="text" name="" id="" ng-model="search">
 <!-- job section start -->
 
-<section id="job-section">
+<section id="job-section" >
     <div class="card mb-3 job-containor" ng-controller="jobCtrl">
-        <div class="card-body uppr job-height" ng-repeat="job in jobs">
+        <div class="card-body uppr job-height" ng-repeat="job in jobs | filter: search">
             <img class="job-logo" ng-src="{{job.logo}}" alt="" srcset="">
             <div class="info">
                 <h5 class="card-title">{{job.title}}</h5>
@@ -69,9 +69,9 @@
             <h5 class="job-heading">Qulification</h5>
             <p>{{job.qualification}}</p>
             <h5 >Description</h5>
-            <p>{{job.description}}</p>
+            <p class="max-lines">{{job.description}}</p>
                 <h5>Expriance</h5>
-                <p>{{job.experience}}</p>
+                <p class="max-lines">{{job.experience}}</p>
                 <h5>Employment Type</h5>
                 <p>{{job.employment_type}}</p>
          

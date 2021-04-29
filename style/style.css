@@ -80,11 +80,24 @@ html, body {
 
 .job-containor{
     border: none;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 2%;
     width: 80%;
     margin: 2% 10%;
+    flex-direction: row;
 }
+
+
+.max-lines {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.5em;
+  }
 
 
 .job-card{
@@ -115,7 +128,8 @@ html, body {
 }
 
 .job-height{
-    width: 55%;
+    width: 32%;
+    height: 531px;
 }
 
 /* job section end */

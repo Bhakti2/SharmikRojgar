@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SharmikRojgar</title>    
+    <title>Job | SharmikRojgar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body ng-app="myApp">
 
-<!-- navbar start -->
+    <!-- navbar start -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -28,13 +28,13 @@
           </li>
           <li class="nav-item">
            
-            <a class="nav-link  active "style="    padding-right: 2.5rem;
+            <a class="nav-link  "style="    padding-right: 2.5rem;
             padding-left: 0.5rem;" href="#">Feed</a>
           </li>
           <li class="nav-item">
             
-            <a class="nav-link " style="    padding-right: 2.5rem;
-            padding-left: 0.5rem;" href="/job.html">Job</a>
+            <a class="nav-link active " style="    padding-right: 2.5rem;
+            padding-left: 0.5rem;" href="#">Job</a>
           </li>
           <li class="nav-item dropdown">
          
@@ -55,33 +55,33 @@
 
 <!-- navbar end -->
 
-<!-- feedsection start -->
+<!-- job section start -->
 
-<section class="feed-containor" >
-    <div class="card mb-3 card-containor" ng-controller="myCtrl" >
-        <div class="card-body uppr" ng-repeat="person in persons" >
-            <img class="uppr-img" ng-src="{{person.avatar}}" alt="">
+<section id="job-section">
+    <div class="card mb-3 job-containor" ng-controller="jobCtrl">
+        <div class="card-body uppr job-height" ng-repeat="job in jobs">
+            <img class="job-logo" ng-src="{{job.logo}}" alt="" srcset="">
             <div class="info">
-                <h5 class="card-title">{{person.user}}</h5>
-                <h6 class="card-text para">{{person.designation}}</h6>
+                <h5 class="card-title">{{job.title}}</h5>
+                <h6 class="card-text para">{{job.company}}</h6>
+                <h6 class="card-text para job-para">{{job.location}}</h6>
             </div> 
-            <p class="feed-para">{{person.description}}</p>
-            <img class="lower-img" ng-src="{{person.img}}" alt="">   
-            <div class="lower">
-                <i class="fa fa-thumbs-up extra" aria-hidden="true"></i>
-                <span>like</span>
-                <i class="fa fa-comment extra" aria-hidden="true"></i>
-                <span>comment</span>
-                <i class="fa fa-share extra" aria-hidden="true"></i>
-               <span>share</span> 
-            </div>
+            <h5 class="job-heading">Qulification</h5>
+            <p>{{job.qualification}}</p>
+            <h5 >Description</h5>
+            <p>{{job.description}}</p>
+                <h5>Expriance</h5>
+                <p>{{job.experience}}</p>
+                <h5>Employment Type</h5>
+                <p>{{job.employment_type}}</p>
+         
+
         </div>
     </div>
 </section>
 
-
-<!-- feedsection end -->
-
+<!-- job section end -->
+ 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="/app.js"></script>
 </body>

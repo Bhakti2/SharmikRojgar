@@ -54,7 +54,7 @@
   </nav>
 
 <!-- navbar end -->
-<input type="text" class="form-control" placeholder="What your looking for?" ng-model="search">
+<input type="text" class="form-control input-job" placeholder="What your looking for?" ng-model="search">
 <!-- job section start -->
 
 <section id="job-section" >
@@ -69,9 +69,9 @@
             <h5 class="job-heading">Qulification</h5>
             <p>{{job.qualification}}</p>
             <h5 >Description</h5>
-            <p class="max-lines">{{job.description}}</p>
+            <p maxlength="5">{{job.description}}</p>
                 <h5>Expriance</h5>
-                <p class="max-lines">{{job.experience}}</p>
+                <p class="max-lines overflow-hidden">{{job.experience}}</p>
                 <h5>Employment Type</h5>
                 <p>{{job.employment_type}}</p>
          

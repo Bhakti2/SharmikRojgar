@@ -15,7 +15,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">ShramikRojgar</a>
+      <a class="navbar-brand" href="/index.html">ShramikRojgar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,7 +54,13 @@
   </nav>
 
 <!-- navbar end -->
-<input type="text" class="form-control input-job" placeholder="What your looking for?" ng-model="search">
+<div class="input-group mb-3 input-job">
+  <input type="text" class="form-control" placeholder="What you are looking for?" ng-model="search" aria-label="What you are looking for?" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </div>
+</div>
+
 <!-- job section start -->
 
 <section id="job-section" >

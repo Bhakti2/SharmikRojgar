@@ -39,8 +39,10 @@ html, body {
 }
 
 .uppr{
-    margin: 4% 2% -1% 0%;
+    margin: 4% 2% -1% 18%;
    border-radius: 20px;
+   width: 67%;
+   height: 619px;
     box-shadow: 5px 10px 18px #888888;
 }
 
@@ -132,4 +134,9 @@ html, body {
     height: 531px;
 }
 
+.job-uppr{
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+}
 /* job section end */

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body ng-app="myApp">
+  <div ng-view></div>
 
 <!-- navbar start -->
 
@@ -24,7 +25,7 @@
           <li class="nav-item">
            
             <a class="nav-link  " style="    padding-right: 2.5rem;
-            padding-left: 0.5rem;"aria-current="page" href="#">Home</a>
+            padding-left: 0.5rem;"aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
            
@@ -34,7 +35,7 @@
           <li class="nav-item">
             
             <a class="nav-link " style="    padding-right: 2.5rem;
-            padding-left: 0.5rem;" href="/job.html">Job</a>
+            padding-left: 0.5rem;" href="#!job">Job</a>
           </li>
           <li class="nav-item dropdown">
          
@@ -84,6 +85,7 @@
 <!-- feedsection end -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <script src="/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

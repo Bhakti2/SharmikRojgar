@@ -3,8 +3,8 @@
 //     document.querySelector('.cont').classList.toggle('s-signup');
 // });
 
-var app = angular.module("myApp",['ngRoute']);
-app.config(function ($routeProvider, $locationProvider) {
+var app = angular.module("myApp",["ngRoute"]);
+app.config(function ($routeProvider) {
   $routeProvider
     .when("/feed", {
       templateUrl: "feed.html",
@@ -12,11 +12,9 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/job", {
       templateUrl: "job.html",
     })
-    .when("/login", {
-      templateUrl: "/login.html",
-    })
+
     .otherwise({
-      redirectTo: "/index.html",
+      redirectTo: "./feed.html",
     });
 });
 app.controller("myCtrl", function ($scope, $http) {

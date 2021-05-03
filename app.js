@@ -1,9 +1,9 @@
-document.querySelector('.img-btn').addEventListener('click', function()
-{
-    document.querySelector('.cont').classList.toggle('s-signup');
-});
+// document.querySelector('.img-btn').addEventListener('click', function()
+// {
+//     document.querySelector('.cont').classList.toggle('s-signup');
+// });
 
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp",['ngRoute']);
 app.config(function ($routeProvider, $locationProvider) {
   $routeProvider
     .when("/feed", {
